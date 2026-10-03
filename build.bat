@@ -1,0 +1,1 @@
+call C:\minigui\batch\hbmk2.bat %* maxpaint.hbp

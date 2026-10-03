@@ -1,0 +1,41 @@
+Harbour 3.2.0dev (r2408171537)
+Copyright (c) 1999-2021, https://harbour.github.io/
+Borland Resource Compiler  Version 5.40
+Copyright (c) 1990, 1999 Inprise Corporation.  All rights reserved.
+C:\Users\jcspr\AppData\Local\Temp\hbmk_w0tr1n.dir\maxpaint.c:
+Warning W8013 maxpaint.prg 529: Possible use of 'pPrinterEnum4' before definition in function HB_FUN_ENUMPRINTERS
+Warning W8079 maxpaint.prg 540: Mixing pointers to different 'char' types in function HB_FUN_ENUMPRINTERS
+Warning W8079 maxpaint.prg 541: Mixing pointers to different 'char' types in function HB_FUN_ENUMPRINTERS
+Warning W8079 maxpaint.prg 544: Mixing pointers to different 'char' types in function HB_FUN_ENUMPRINTERS
+Warning W8013 maxpaint.prg 553: Possible use of 'pPrinterEnum' before definition in function HB_FUN_ENUMPRINTERS
+Warning W8079 maxpaint.prg 564: Mixing pointers to different 'char' types in function HB_FUN_ENUMPRINTERS
+Warning W8079 maxpaint.prg 565: Mixing pointers to different 'char' types in function HB_FUN_ENUMPRINTERS
+Warning W8079 maxpaint.prg 568: Mixing pointers to different 'char' types in function HB_FUN_ENUMPRINTERS
+Warning W8079 maxpaint.prg 581: Mixing pointers to different 'char' types in function HB_FUN_WINDEFAULTPRINTER
+Warning W8079 maxpaint.prg 585: Mixing pointers to different 'char' types in function HB_FUN_WINDEFAULTPRINTER
+Warning W8079 maxpaint.prg 598: Mixing pointers to different 'char' types in function HB_FUN_PRINTFILERAW
+Warning W8079 maxpaint.prg 600: Mixing pointers to different 'char' types in function HB_FUN_PRINTFILERAW
+Warning W8079 maxpaint.prg 603: Mixing pointers to different 'char' types in function HB_FUN_PRINTFILERAW
+Warning W8079 maxpaint.prg 607: Mixing pointers to different 'char' types in function HB_FUN_PRINTFILERAW
+Warning W8080 maxpaint.prg 635: 'cDocName' is declared but never used in function HB_FUN_PRINTFILERAW
+C:\Users\jcspr\AppData\Local\Temp\hbmk_w0tr1n.dir\ciec3.c:
+C:\Users\jcspr\AppData\Local\Temp\hbmk_w0tr1n.dir\CIEC5.c:
+C:\Users\jcspr\AppData\Local\Temp\hbmk_w0tr1n.dir\ciec5st.c:
+C:\Users\jcspr\AppData\Local\Temp\hbmk_w0tr1n.dir\cliente.c:
+C:\Users\jcspr\AppData\Local\Temp\hbmk_w0tr1n.dir\EMPRESA.c:
+C:\Users\jcspr\AppData\Local\Temp\hbmk_w0tr1n.dir\FORNECE.c:
+C:\Users\jcspr\AppData\Local\Temp\hbmk_w0tr1n.dir\INDICE.c:
+C:\Users\jcspr\AppData\Local\Temp\hbmk_w0tr1n.dir\JCSBACK.c:
+C:\Users\jcspr\AppData\Local\Temp\hbmk_w0tr1n.dir\MAX3.c:
+C:\Users\jcspr\AppData\Local\Temp\hbmk_w0tr1n.dir\MAX4.c:
+C:\Users\jcspr\AppData\Local\Temp\hbmk_w0tr1n.dir\MAX4AGR.c:
+C:\Users\jcspr\AppData\Local\Temp\hbmk_w0tr1n.dir\MAX5.c:
+C:\Users\jcspr\AppData\Local\Temp\hbmk_w0tr1n.dir\MAX6.c:
+C:\Users\jcspr\AppData\Local\Temp\hbmk_w0tr1n.dir\MAX6E.c:
+C:\Users\jcspr\AppData\Local\Temp\hbmk_w0tr1n.dir\MAX7.c:
+C:\Users\jcspr\AppData\Local\Temp\hbmk_w0tr1n.dir\MAXORCPD.c:
+C:\Users\jcspr\AppData\Local\Temp\hbmk_w0tr1n.dir\senha.c:
+C:\Users\jcspr\AppData\Local\Temp\hbmk_w0tr1n.dir\USUARIOS.c:
+C:\Users\jcspr\AppData\Local\Temp\hbmk_c4cfnt.c:
+Turbo Incremental Link 5.69 Copyright (c) 1997-2005 Borland
+Warning: Unable to load DLL LNKDFM50

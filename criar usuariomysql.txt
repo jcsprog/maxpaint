@@ -1,0 +1,13 @@
+CREATE user 'admin'@'%' IDENTIFIED BY 'admin@123';
+
+GRANT ALL PRIVILEGES ON ctrfiado.* TO admin@'%';
+
+flush privileges;
+select * from mysql.user;
+
+CREATE user 'remoto'@'192.168.0.104' IDENTIFIED BY 'remoto@123';
+
+GRANT ALL PRIVILEGES ON ctrfiado.* TO 'remoto'@'192.168.0.104';
+
+flush privileges;
+select * from mysql.user;

@@ -1,0 +1,264 @@
+<!DOCTYPE html><html><head><meta charset="windows-1251"><title>Harbour MiniGUI Errorlog File</title><style>body{font-family:sans-serif;background-color:#fff;font-size:100%;color:#000;padding:15px}.summary,details summary{color:#069;background:#ffc;border:1px solid #9af;padding:5px;margin:10px 5px;cursor:pointer}.link{display:block;background:#cfc;text-decoration:none}h1{font-family:sans-serif;font-size:150%;color:#00c;font-weight:700;background-color:#f0f0f0}.updated{font-family:sans-serif;color:#c00;font-size:110%}.normaltext{font-family:sans-serif;font-size:100%;color:#000;font-weight:400;text-transform:none;text-decoration:none}.large-select{font-size:125%;padding:8px;margin:5px;background:#cdf}</style><script>const filterBy=(r,e,l,n=null)=>{let t=r.map(l);t=t.reduce((e,t)=>(t in e||(e[t]=0),e[t]++,e),{}),t=Object.entries(t).reduce((e,[t,r])=>(e[t]=[t,r,`[${r}] ${t}`],e),{});const c=document.querySelector(e);Object.values(t).sort((e,t)=>t[1]-e[1]).forEach(([e,,t])=>{const r=document.createElement("option");r.value=e,r.innerText=t,c.appendChild(r)});c.addEventListener("change",e=>{n&&n(c);const t=e.target.value;r.forEach(e=>((e,t)=>{var r;"null"!==t?(r=l(e),e.style.display=r===t?null:"none",console.log(e,e.style.display)):e.style.display=null})(e,t))})};document.addEventListener("DOMContentLoaded",function(e){var t=[...document.querySelectorAll(".record")],r=t=>document.querySelector("#extra-panel").querySelectorAll("select").forEach(e=>t!==e&&(e.selectedIndex=0));filterBy(t,"#filterByDate",e=>e.querySelector(".date").innerText,r),filterBy(t,"#filterByStacktrace",e=>e.querySelector(".stacktrace")?.childNodes[0]?.data.trim(),r),filterBy(t,"#filterByError",e=>e.querySelector(".error").innerText.replace(/(\r\n|\n|\r)/gm,"").replace(/\s{2,}/g," ").trim(),r),document.querySelector("#extra-panel").style.display=null,console.log("DOMContentLoaded")})</script></head><body><h1 style="text-align:center">Harbour MiniGUI Errorlog File</h1><div id="extra-panel" style="display:none"><select autocomplete="off" id="filterByDate" class="large-select"><option selected="selected" disabled="disabled" value="null">Filter by Date</option><option value="null">All dates</option></select> <select autocomplete="off" id="filterByStacktrace" class="large-select"><option selected="selected" disabled="disabled" value="null">Filter by StackTrace</option><option value="null">All stacktraces</option></select> <select autocomplete="off" id="filterByError" class="large-select"><option selected="selected" disabled="disabled" value="null">Filter by Error</option><option value="null">All errors</option></select></div></body></html><HR>
+<div class="record">
+<p class="updated">
+Date: <span class="date">27/05/2026</span> Time: <span class="time">19:15:53</span><BR>
+Application: C:\maxpaint\maxpaint.exe<BR>
+User: JHONNY-NTB / jcspr<BR>
+Time from start: 0 days 0 hours 5 mins 6 secs<BR>
+<span class="error">Error MGERROR/0 Control Progress_1 Of Jcs_1 Not defined. Program terminated.</span>
+</p>
+<details><summary>
+--------------------------------- Stack Trace ---------------------------------
+<br/></summary><span class="stacktrace">
+Called from MSGMINIGUIERROR(99) in module: h_error.prg
+<BR>
+Called from GETCONTROLHANDLE(1062) in module: h_controlmisc.prg
+<BR>
+Called from ONABREA(164) in module: senha.prg
+<BR>
+Called from ABERTURA_ARQ(154) in module: senha.prg
+<BR>
+Called from FBACKUP(112) in module: JCSBACK.PRG
+<BR>
+Called from (b)BACKUPJCS(46) in module: JCSBACK.PRG
+<BR>
+Called from _DOCONTROLEVENTPROCEDURE(2050) in module: h_windows.prg
+<BR>
+Called from EVENTS(1768) in module: h_events.prg
+<BR>
+Called from DOMESSAGELOOP(0)
+<BR>
+Called from _ACTIVATEWINDOW(1649) in module: h_windows.prg
+<BR>
+Called from DOMETHOD(5912) in module: h_controlmisc.prg
+<BR>
+Called from BACKUPJCS(65) in module: JCSBACK.PRG
+<BR>
+Called from (b)MAIN(109) in module: maxpaint.prg
+<BR>
+Called from _DOCONTROLEVENTPROCEDURE(2050) in module: h_windows.prg
+<BR>
+Called from EVENTS(1702) in module: h_events.prg
+<BR>
+Called from DOMESSAGELOOP(0)
+<BR>
+Called from _ACTIVATEWINDOW(1649) in module: h_windows.prg
+<BR>
+Called from DOMETHOD(5912) in module: h_controlmisc.prg
+<BR>
+Called from MAIN(133) in module: maxpaint.prg
+<BR>
+</span></details>
+<details><summary>
+----------------------------- System Information ------------------------------
+<br/></summary>
+Workstation name...: JHONNY-NTB<BR>
+Active user name...: jcspr<BR>
+CPU type...........: 12th Gen Intel(R) Core(TM) i5-1235U [~2496 MHz]<BR>
+Hardware memory....: 16068 MB<BR>
+Available memory...: 3041 MB<BR>
+Current disk.......: C<BR>
+Current directory..: maxpaint<BR>
+Free disk space....: 258611 MB<BR>
+<BR>
+Operating system...: Windows 10 10.0<BR>
+MiniGUI version....: Harbour MiniGUI Extended Edition 24.11 (32-bit) ANSI (DEBUG)<BR>
+Harbour version....: Harbour 3.2.0dev (r2408171537)<BR>
+Harbour built on...: Sep 12 2024 13:19:24<BR>
+C/C++ compiler.....: Borland C++ 5.8.2 (32-bit)<BR>
+Multi Threading....: NO<BR>
+VM Optimization....: NO<BR>
+<BR>
+Current Work Area..: 16<BR>
+</details>
+<details><summary>
+-------------------------- Environmental Information --------------------------
+<br/></summary>
+SET ALTERNATE......: OFF<BR>
+SET ALTFILE........:<BR>
+SET AUTOPEN........: ON<BR>
+SET AUTORDER.......: 0<BR>
+SET AUTOSHARE......: 0<BR>
+SET CENTURY........: ON<BR>
+SET COUNT..........: 0<BR>
+SET DATE FORMAT....: DD/MM/YYYY<BR>
+SET DBFLOCKSCHEME..: 0<BR>
+SET DEBUG..........: ON<BR>
+SET DECIMALS.......: 2<BR>
+SET DEFAULT........:<BR>
+SET DEFEXTENSIONS..: ON<BR>
+SET DELETED........: ON<BR>
+SET DELIMCHARS.....: ::<BR>
+SET DELIMETERS.....: ON<BR>
+SET DIRCASE........: 0<BR>
+SET DIRSEPARATOR...: \<BR>
+SET EOL............: 13<BR>
+SET EPOCH..........: 1920<BR>
+SET ERRORLOG.......: C:\maxpaint\ErrorLog.htm<BR>
+SET EXACT..........: OFF<BR>
+SET EXCLUSIVE......: OFF<BR>
+SET EXTRA..........: OFF<BR>
+SET EXTRAFILE......:<BR>
+SET FILECASE.......: 0<BR>
+SET FIXED..........: OFF<BR>
+SET FORCEOPT.......: OFF<BR>
+SET HARDCOMMIT.....: ON<BR>
+SET IDLEREPEAT.....: ON<BR>
+SET LANGUAGE.......: pt.DE850<BR>
+SET MARGIN.........: 0<BR>
+SET MBLOCKSIZE.....: 64<BR>
+SET MFILEEXT.......:<BR>
+SET OPTIMIZE.......: ON<BR>
+SET PATH...........:<BR>
+SET PRINTER........: OFF<BR>
+SET PRINTFILE......: LPT1<BR>
+SET SOFTSEEK.......: OFF<BR>
+SET TRIMFILENAME...: .F.<BR>
+SET UNIQUE.........: OFF<BR>
+</details>
+<details><summary>
+-------------------------- Detailed Work Area Items ---------------------------
+<br/></summary>
+Work Area No ......: 1<BR>
+Alias .............: JCS<BR>
+Current Recno .....: 26<BR>
+Current Filter ....:<BR>
+Index Order .......: 1<BR>
+Active Key ........: NOMEU+STR(COD,5)<BR>
+<BR>
+Work Area No ......: 2<BR>
+Alias .............: LIND<BR>
+Current Recno .....: 78<BR>
+Current Filter ....:<BR>
+Index Order .......: 1<BR>
+Active Key ........: STR(COD,5)+APELIDO+NINDE<BR>
+<BR>
+Work Area No ......: 3<BR>
+Alias .............: IDC<BR>
+Current Recno .....: 36<BR>
+Current Filter ....:<BR>
+Index Order .......: 1<BR>
+Active Key ........: STR(COD,5)+APELIDO<BR>
+<BR>
+Work Area No ......: 4<BR>
+Alias .............: CLI<BR>
+Current Recno .....: 28<BR>
+Current Filter ....:<BR>
+Index Order .......: 1<BR>
+Active Key ........: FANTA<BR>
+<BR>
+Work Area No ......: 5<BR>
+Alias .............: FORN<BR>
+Current Recno .....: 11<BR>
+Current Filter ....:<BR>
+Index Order .......: 1<BR>
+Active Key ........: FANTA<BR>
+<BR>
+Work Area No ......: 6<BR>
+Alias .............: CADP<BR>
+Current Recno .....: 5<BR>
+Current Filter ....:<BR>
+Index Order .......: 1<BR>
+Active Key ........: CODPEC<BR>
+<BR>
+Work Area No ......: 7<BR>
+Alias .............: FAM<BR>
+Current Recno .....: 128<BR>
+Current Filter ....:<BR>
+Index Order .......: 1<BR>
+Active Key ........: CODMAX+CODCOMP<BR>
+<BR>
+Work Area No ......: 8<BR>
+Alias .............: ICM<BR>
+Current Recno .....: 1009<BR>
+Current Filter ....:<BR>
+Index Order .......: 1<BR>
+Active Key ........: CODMA+CODMT<BR>
+<BR>
+Work Area No ......: 9<BR>
+Alias .............: EMP<BR>
+Current Recno .....: 1<BR>
+Current Filter ....:<BR>
+Index Order .......: 1<BR>
+Active Key ........: CODIGO<BR>
+<BR>
+Work Area No ......: 10<BR>
+Alias .............: OMT<BR>
+Current Recno .....: 3<BR>
+Current Filter ....:<BR>
+Index Order .......: 1<BR>
+Active Key ........: OCODMA+OCODMT<BR>
+<BR>
+Work Area No ......: 11<BR>
+Alias .............: CADC<BR>
+Current Recno .....: 2<BR>
+Current Filter ....:<BR>
+Index Order .......: 1<BR>
+Active Key ........: CODVED<BR>
+<BR>
+Work Area No ......: 12<BR>
+Alias .............: OPL<BR>
+Current Recno .....: 16<BR>
+Current Filter ....:<BR>
+Index Order .......: 1<BR>
+Active Key ........: STR(NLOTE,10)+DTOS(DTLAN)<BR>
+<BR>
+Work Area No ......: 13<BR>
+Alias .............: OPI<BR>
+Current Recno .....: 28<BR>
+Current Filter ....:<BR>
+Index Order .......: 1<BR>
+Active Key ........: STR(NLOTE,10)+CODMASSA<BR>
+<BR>
+Work Area No ......: 14<BR>
+Alias .............: OPO<BR>
+Current Recno .....: 2<BR>
+Current Filter ....:<BR>
+Index Order .......: 1<BR>
+Active Key ........: STR(NLOTE,10)<BR>
+<BR>
+Work Area No ......: 15<BR>
+Alias .............: FORM<BR>
+Current Recno .....: 2<BR>
+Current Filter ....:<BR>
+Index Order .......: 1<BR>
+Active Key ........: CODMA+CODMT<BR>
+<BR>
+Work Area No ......: 16<BR>
+Alias .............: AGR<BR>
+Current Recno .....: 3<BR>
+Current Filter ....:<BR>
+Index Order .......: 1<BR>
+Active Key ........: CODMAXAGR+AGREGADO<BR>
+<BR>
+</details>
+<details><summary>
+--------------------- Internal Error Handling Information ---------------------
+<br/></summary>
+Subsystem Call ....: MGERROR<BR>
+System Code .......: 0<BR>
+Default Status ....: .F.<BR>
+Description .......: Control Progress_1 Of Jcs_1 Not defined. Program terminated.<BR>
+</details>
+<details><summary>
+------------------------- Available Memory Variables --------------------------
+<br/></summary>
+     ENDEMP TYPE C []<BR>
+     ENDCLI TYPE C []<BR>
+     CINCL TYPE L [.F.]<BR>
+     CIMPR TYPE L [.F.]<BR>
+     CEXCL TYPE L [.F.]<BR>
+     CALTE TYPE L [.F.]<BR>
+     ADM TYPE N [0]<BR>
+     EMPRESA TYPE C [MAXPAINT TESTE SISTEMA/Revestimentos Especiais]<BR>
+     VUSUARIO TYPE C [JOAO CARLOS                   ]<BR>
+     NEWBRUSH TYPE N [ 521146026]<BR>
+     I TYPE N [       106]<BR>
+     ARQUIVO TYPE C [CADAGREGA.DBF]<BR>
+     APELIDO TYPE C [AGR]<BR>
+     INDICE TYPE C [IDCADAGR1]<BR>
+<BR>
+</details>
+<HR>
+</div>
+</BODY></HTML>
